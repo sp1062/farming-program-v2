@@ -7,3 +7,4 @@ C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\De
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.csproj.GenerateResource.Cache
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.exe
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.pdb
+C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.LoginInterface.resources

@@ -16,7 +16,11 @@ namespace farmingprogram
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProgramInterface());
+
+            SqlConnector connector = new SqlConnector();
+            connector.startConnection();
+
+            Application.Run(new LoginInterface());
         }
     }
 }

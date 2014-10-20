@@ -44,11 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProgramInterface.cs">
+    <Compile Include="SqlConnector.cs" />
+    <Compile Include="LoginInterface.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProgramInterface.Designer.cs">
-      <DependentUpon>ProgramInterface.cs</DependentUpon>
+    <Compile Include="LoginInterface.Designer.cs">
+      <DependentUpon>LoginInterface.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>
@@ -58,6 +59,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LoginInterface.resx">
+      <DependentUpon>LoginInterface.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>

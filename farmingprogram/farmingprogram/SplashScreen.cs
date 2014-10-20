@@ -15,9 +15,11 @@ namespace farmingprogram
     public partial class SplashScreen : Form
     {        
         public const int SPLASH_SCREEN_TIMEOUT = 5000;
+        public static SplashScreen splash;
 
         public SplashScreen()
         {
+            CenterToScreen();
             InitializeComponent();
         }
 
@@ -29,7 +31,8 @@ namespace farmingprogram
 
         public static void startSplashScreen()
         {
-            Application.Run(new SplashScreen());
+            splash = new SplashScreen();
+            Application.Run(splash);
         }
     }
 }
