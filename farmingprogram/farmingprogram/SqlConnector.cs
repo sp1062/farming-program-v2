@@ -15,7 +15,7 @@ namespace farmingprogram
 
         const string LOGIN_SUBDATABASE = "login";
         const string MAIN_SUBDATABASE = "main";
-        const string SERVER_NAME = "192.186.221.135:3306";
+        const string SERVER_NAME = "p3plcpnl0122.prod.phx3.secureserver.net";
         public void startConnection()
         {
             string connetionString = null;
@@ -24,8 +24,8 @@ namespace farmingprogram
             connection = new SqlConnection(connetionString);
             try
             {
-                connection.Open();
-                MessageBox.Show("Connected.");
+                //connection.Open();
+                //MessageBox.Show("Connected.");
             }
             catch (Exception ex)
             {
