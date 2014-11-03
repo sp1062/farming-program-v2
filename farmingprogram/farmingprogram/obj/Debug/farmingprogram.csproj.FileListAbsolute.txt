@@ -1,10 +1,12 @@
-C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\farmingprogram.exe.config
-C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\farmingprogram.exe
-C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\farmingprogram.pdb
-C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.csprojResolveAssemblyReference.cache
+C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\database\Database.mdf
+C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\database\Database_log.ldf
+C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.LoginInterface.resources
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.SplashScreen.resources
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.Properties.Resources.resources
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.csproj.GenerateResource.Cache
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.exe
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.pdb
-C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.LoginInterface.resources
+C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\farmingprogram.exe.config
+C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\farmingprogram.exe
+C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\farmingprogram.pdb
+C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.csprojResolveAssemblyReference.cache

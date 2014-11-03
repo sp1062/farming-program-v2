@@ -5,32 +5,60 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.IO;
+using System.Data;
+
 namespace farmingprogram
 {
     class SqlConnector
     {
-        const string DATABASE_NAME = "farmingdatabase";
-        const string DATABASE_USERNAME = "anglia";
-        const string DATABASE_PASSWORD = "anglia";
+        private static SqlConnection connection = null;
 
-        const string LOGIN_SUBDATABASE = "login";
-        const string MAIN_SUBDATABASE = "main";
-        const string SERVER_NAME = "p3plcpnl0122.prod.phx3.secureserver.net";
-        public void startConnection()
+        public static void startConnection()
         {
-            string connetionString = null;
-            SqlConnection connection;
-            connetionString = "Data Source="+SERVER_NAME+";Initial Catalog="+DATABASE_NAME+";User ID="+DATABASE_USERNAME+";Password="+DATABASE_PASSWORD+"";
-            connection = new SqlConnection(connetionString);
+            string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string path = (System.IO.Path.GetDirectoryName(executable));
+            connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=" + path + @"\database\Database.mdf;Integrated Security=True");
             try
             {
-                //connection.Open();
-                //MessageBox.Show("Connected.");
+                connection.Open();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
             }
+        }
+
+        public static SqlConnection getConnection()
+        {
+            if (connection == null || connection.State == ConnectionState.Closed)
+            {
+                startConnection();
+            }
+            return connection;
+        }
+
+        public static Boolean validPassword(String username, String password)
+        {
+            if (String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Invalid credentials.");
+                return false;
+            }
+            
+            string queryString = "SELECT * FROM Login";
+            SqlDataReader command = new SqlCommand(queryString, getConnection()).ExecuteReader();
+
+            while (command.Read())
+            {
+                String name = command.GetString(0).ToLower();
+                String pass = command.GetString(1).ToLower();
+                if (name.Equals(username.ToLower()) && pass.Equals(password.ToLower()))
+                {
+                    return true;
+                }
+            }
+            MessageBox.Show("Invalid username or password try again.");
+            return false;
         }
     }
 }

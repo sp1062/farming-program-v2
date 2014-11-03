@@ -17,9 +17,7 @@ namespace farmingprogram
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            SqlConnector connector = new SqlConnector();
-            connector.startConnection();
-
+            SqlConnector.startConnection();
             Application.Run(new LoginInterface());
         }
     }

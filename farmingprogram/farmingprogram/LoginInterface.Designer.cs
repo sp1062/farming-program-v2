@@ -68,6 +68,7 @@
             resources.ApplyResources(this.loginBox, "loginBox");
             this.loginBox.Name = "loginBox";
             this.loginBox.UseVisualStyleBackColor = true;
+            this.loginBox.Click += new System.EventHandler(this.loginBox_Click);
             // 
             // LoginInterface
             // 
