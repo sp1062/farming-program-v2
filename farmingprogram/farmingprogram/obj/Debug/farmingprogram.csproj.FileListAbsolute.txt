@@ -10,3 +10,15 @@ C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\De
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\farmingprogram.exe
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\bin\Debug\farmingprogram.pdb
 C:\Users\J\Documents\GitHub\farming-program\farmingprogram\farmingprogram\obj\Debug\farmingprogram.csprojResolveAssemblyReference.cache
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\bin\Debug\farmingprogram.exe.config
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\obj\Debug\farmingprogram.exe
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\obj\Debug\farmingprogram.pdb
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\bin\Debug\database\DbFarmProgram.mdf
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\bin\Debug\database\DbFarmProgram_log.ldf
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\bin\Debug\farmingprogram.exe
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\bin\Debug\farmingprogram.pdb
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\obj\Debug\farmingprogram.csprojResolveAssemblyReference.cache
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\obj\Debug\farmingprogram.LoginInterface.resources
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\obj\Debug\farmingprogram.SplashScreen.resources
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\obj\Debug\farmingprogram.Properties.Resources.resources
+C:\Users\sp1062\Desktop\farming-program-v2-master\farmingprogram\farmingprogram\obj\Debug\farmingprogram.csproj.GenerateResource.Cache

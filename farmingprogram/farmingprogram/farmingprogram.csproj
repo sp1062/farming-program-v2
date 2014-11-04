@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff.cs" />
     <EmbeddedResource Include="LoginInterface.resx">
       <DependentUpon>LoginInterface.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,12 +108,12 @@
     <None Include="Resources\splash.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="database\Database.mdf">
+    <Content Include="database\DbFarmProgram.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="database\Database_log.ldf">
+    <Content Include="database\DbFarmProgram_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database.mdf</DependentUpon>
+      <DependentUpon>DbFarmProgram.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -18,7 +18,7 @@ namespace farmingprogram
         {
             string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
             string path = (System.IO.Path.GetDirectoryName(executable));
-            connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=" + path + @"\database\Database.mdf;Integrated Security=True");
+            connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=" + path + @"\database\DbFarmProgram.mdf;Integrated Security=True");
             try
             {
                 connection.Open();
@@ -47,17 +47,19 @@ namespace farmingprogram
             
             string queryString = "SELECT * FROM Login";
             SqlDataReader command = new SqlCommand(queryString, getConnection()).ExecuteReader();
-
+            
             while (command.Read())
             {
                 String name = command.GetString(0).ToLower();
                 String pass = command.GetString(1).ToLower();
                 if (name.Equals(username.ToLower()) && pass.Equals(password.ToLower()))
                 {
+                    command.Close();
                     return true;
                 }
             }
             MessageBox.Show("Invalid username or password try again.");
+            command.Close();
             return false;
         }
     }
