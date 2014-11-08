@@ -32,7 +32,6 @@ namespace farmingprogram
         {
             String name = usernameBox.Text;
             String password = passwordBox.Text;
-
             if (SqlConnector.validPassword(name, password))
             {
                 MessageBox.Show("Valid password");

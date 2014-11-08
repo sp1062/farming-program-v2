@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PasswordEncryption.cs" />
     <Compile Include="SqlConnector.cs" />
     <Compile Include="LoginInterface.cs">
       <SubType>Form</SubType>

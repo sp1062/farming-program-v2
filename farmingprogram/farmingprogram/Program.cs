@@ -20,5 +20,17 @@ namespace farmingprogram
             SqlConnector.startConnection();
             Application.Run(new LoginInterface());
         }
+
+        private static Staff staff;
+
+        public static void setStaff(Staff s)
+        {
+            staff = s;
+        }
+
+        public static Staff getStaff()
+        {
+            return staff;
+        }
     }
 }

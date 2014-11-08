@@ -25,6 +25,8 @@ namespace farmingprogram
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Error opening connection. Closing program.");
+                Environment.Exit(0);
             }
         }
 
@@ -47,19 +49,24 @@ namespace farmingprogram
             
             string queryString = "SELECT * FROM Login";
             SqlDataReader command = new SqlCommand(queryString, getConnection()).ExecuteReader();
-            
-            while (command.Read())
+
+            try
             {
-                String name = command.GetString(0).ToLower();
-                String pass = command.GetString(1).ToLower();
-                if (name.Equals(username.ToLower()) && pass.Equals(password.ToLower()))
+                while (command.Read())
                 {
-                    command.Close();
-                    return true;
+                    String name = command.GetString(0).ToLower();
+                    String pass = command.GetString(1).ToLower();
+                    if (name.Equals(username.ToLower()) && pass.Equals(PasswordEncryption.Encrypt(password).ToLower()))
+                    {
+                        return true;
+                    }
                 }
+                MessageBox.Show("Invalid username or password try again.");
             }
-            MessageBox.Show("Invalid username or password try again.");
-            command.Close();
+            finally
+            {
+                command.Close();
+            }
             return false;
         }
     }
